@@ -1,0 +1,250 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.op{
+    position	: absolute;
+  /*   font-weight: 800; 
+    font-size: 24px;
+    margin-top: 100px; 
+    margin-left: 180px;
+    margin-right: 180px; */
+    top	: 100px;   
+    padding-left: 10px;
+}
+.its {
+    margin-top: -400px;
+    background-color: #0000008a;
+    color:#ffffff;
+    padding: 10px 100px;
+    text-align: center;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.logo {
+    position: absolute;
+    left: 130px;
+    top: 60px;
+    z-index: 1;
+}
+.pr {
+    margin-top:50px;
+    color:#fff;
+}
+.greenhouse {
+    color:#ffffff;
+    font-size: 15px;
+    margin-top: 72px;
+    margin-right: 20px;
+    z-index: 1;
+}
+.naz {
+    color:#ffffff;
+    font-size: 40px;
+    margin-top: 90px;
+    margin-left: 230px;
+}
+
+a{
+color:rgb(224, 226, 74) ;
+}
+.image {
+    z-index: 0;
+	position: relative;
+	width: 100%; /* for IE 6 */
+}
+.im{
+    text-align: right;
+    top: -100px;
+}
+.info {
+
+    text-align: center;
+    margin-top: 30px;
+    font-size: 25px;
+    background-color:white;
+    color:rgb(46, 128, 26);
+    margin-right: 150px;
+    }
+.block {
+    width: 33%;
+    background-color: white;
+    padding-left: 10px;   /* отступ от текста */
+    padding-right: 10px;
+    font-size: 15px;
+    margin-top: 30px;
+    color:rgb(46, 128, 26);
+}
+
+.block2 {
+    background-color: white;
+    padding-left: 10px;   /* отступ от текста */
+    padding-right: 10px;
+    font-size: 15px;
+    margin-top: 30px;
+    float: left;  /* прилегает к левой стороне, обтекается справа */
+    width: 35%;   /* занимает 30%, это чтобы блоки шли в ряд */
+    margin-left: 120px; /* отступ слева */
+    color:rgb(46, 128, 26);
+}
+u {
+    color:rgb(46, 128, 26);
+}
+button {
+   /*  margin-top: -50px;
+    background-color: rgb(46, 128, 26);
+    color:rgb(241, 241, 241);
+    padding: 10px 10px 10px 10px;
+    margin-left: 400px;
+    margin-top: -200px; */
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50; /* Green */
+}
+
+
+.obratnuj-zvonok{
+	width: 100%;
+	max-width: 300px;
+    max-height: 295px;
+    margin-left: 830px;
+    background-color: rgb(46, 128, 26);
+}
+.pol{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 0 20px;
+	box-sizing: border-box;  /* чтобы ничего не выходило дальше родительского блока */
+}
+.pol div{
+	padding: 10px 0;
+}
+.bot-send-mail{
+	box-sizing: border-box;
+	width: 100%;
+}
+.pol label,.pol input{
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+}
+.pol label{
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+.pol input{
+   
+	padding: 10px 15px;
+	margin-top: 10px;
+}
+.pol label span{
+	color: rgb(241, 241, 241);
+}
+.pol .bot-send-mail{
+	padding: 15px;
+	margin-top: 10px;
+	background: none;
+	border: none;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: bold;
+	background-color: rgb(147, 228, 140);
+	cursor: pointer;
+	border: 3px #000000 solid;
+	border-radius: 5px;
+}
+.pol .bot-send-mail:hover{
+	color: rgb(46, 128, 26);
+	background-color: #fff;
+}
+.phone {
+	color:rgb(46, 128, 26);
+	font-size: 50px;
+	font-weight: 900;
+    margin-left: 900px;
+    margin-top: -200px;
+
+}
+.phone a {
+	color: rgb(46, 128, 26);
+	font-size: 16px;
+	font-weight: 900;
+}
+
+
+
+.btn {
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 0 16px;
+	margin: -140px 15px 15px 120px;
+	outline: none;
+	border: none;
+	border-radius: 4px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 12.5px;
+	font-weight: normal;
+	text-decoration: none;
+	vertical-align: top;
+	color:rgb(46, 128, 26);
+	background-color: #dfe6ed;
+	cursor: pointer;
+	user-select: none;
+	appearance: none;
+	touch-action: manipulation;
+	overflow: hidden;
+}
+.btn:focus-visible {
+	box-shadow: 0 0 0 3px lightskyblue;
+}
+.btn:hover {
+	opacity: 0.88;
+}
+.btn:active {
+	line-height: 32px;
+}
+.btn:disabled {
+	pointer-events: none;
+	opacity: 0.65;
+}
+ 
+.btn-2 {
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 0 16px;
+	margin: 0 15px 15px 0;
+	outline: none;
+	border: none;
+	border-radius: 4px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 12.5px;
+	font-weight: normal;
+	text-decoration: none;
+	vertical-align: top;
+	color: #fff;
+	background-color: #5181b8;
+	cursor: pointer;
+	user-select: none;
+	appearance: none;
+	touch-action: manipulation;
+	overflow: hidden;
+}
+.btn-2:focus-visible {
+	box-shadow: 0 0 0 3px lightskyblue;
+}
+.btn-2:hover {
+	opacity: 0.88;
+}
+.btn-2:active {
+	line-height: 32px;
+}
+.btn-2:disabled {
+	pointer-events: none;
+	opacity: 0.65;
+}
