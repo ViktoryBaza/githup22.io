@@ -1,18 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+@media (max-width: 500px) { 
+    .its {
+        display:none;
+    }
+    .per {
+       position: absolute;
+       right: 700px;
+    }
+}
+
+@media (max-width: 1071px) {
+    .per {
+        right: 10px;
+     }
+}
+@media (max-width: 1131px) {
+    .per {
+        right: 10px;
+     }
+}
+@media (max-width: 863px) {
+    .per {
+        right: 70px;
+     }
+}
+@media (max-width: 691px) {
+    .per {
+        right: 151px;
+     }
+}
+@media (max-width: 795px) {
+    .per {
+        right: 100px;
+     }
+}
+@media (min-width: 711px) and (max-width: 807px) {
+    .per {
+        right: 140px;
+     }
+}
+@media (max-width: 711px) {
+    .per {
+        right: 50%;
+        top: 750px;
+     }
+     .pod {
+        position: absolute;
+        top: 1400px;
+     }
+}
+@media (max-width: 711px) {
+    .per {
+        right: 50%;
+        top: 760px;
+     }
+     .pod {
+        position: absolute;
+        top: 1400px;
+     }
+}
+@media (max-width: 487px) {
+    .per {
+        right: 50%;
+        top: 780px;
+     }
+     .pod {
+        position: absolute;
+        top: 1350px;
+     }
+     
+}
+@media (max-width: 414px) {
+    .per {
+        right: 50%;
+        top: 780px;
+     }
+     .pod {
+        position: absolute;
+        top: 1200px;
+     }
+     
+}
+
 
 *{
     margin: 0;
     padding: 0;
+	box-sizing: border-box;/*метод расчета размеров бокса*/
+    font-family: 'Poppins', sans-serif;/*название шрифта*/
 }
 
+.per {
+    position: absolute;
+ }
 .op{
-    position	: absolute;
-  /*   font-weight: 800; 
-    font-size: 24px;
-    margin-top: 100px; 
-    margin-left: 180px;
-    margin-right: 180px; */
-    top	: 100px;   
-    padding-left: 10px;
+    position: absolute;
+    top	: 100px;
+    padding-left: 10px; 
 }
 .its {
     margin-top: -400px;
@@ -94,12 +179,6 @@ u {
     color:rgb(46, 128, 26);
 }
 button {
-   /*  margin-top: -50px;
-    background-color: rgb(46, 128, 26);
-    color:rgb(241, 241, 241);
-    padding: 10px 10px 10px 10px;
-    margin-left: 400px;
-    margin-top: -200px; */
     background-color: white;
     color: black;
     border: 2px solid #4CAF50; /* Green */
@@ -247,4 +326,68 @@ button {
 .btn-2:disabled {
 	pointer-events: none;
 	opacity: 0.65;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 100vh;
+}
+footer{
+    position: relative;
+    width: 100%;
+    padding: 20px 50px;
+    background: #01800a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+footer .wave{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(wave.png);
+    background-size: 1000px 100px;
+}
+.social,
+.menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+.social li,
+.menu li{
+    list-style: none;
+}
+.social li a {
+    font-size: 12px;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+.menu li a {
+    font-size: 1.2em;
+    color: #fff;
+    opacity: 0.75;
+    margin: 0 15px;
+    text-decoration: none;
+    display: inline-block;
+}
+.menu li a:hover {
+    opacity: 1;
+}
+footer p {
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.1em;
 }
